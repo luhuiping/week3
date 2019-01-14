@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+	<h1>马拉松审核</h1>
+		<table border="1">
+			<tr>
+				<th>证件号</th>
+				<th>名字</th>
+				<th>电话</th>
+				<th>邮箱</th>
+				<th>时间</th>
+				<th>审核状态</th>
+				<th>审核</th>
+			</tr>
+		{volist name='list' id='v'}
+		<tr>
+			<td>{$v.zjh}</td>
+			<td>{$v.uname}</td>
+			<td>{$v.tel}</td>
+			<td>{$v.email}</td>
+			<td>{$v.time}</td>
+			<td>{$v.tg}</td>
+			<td><a href="{:url('index/shen')}?={$v.id}">审核</a></td>
+		</tr>
+        {/volist}
+		</table>
+		{$list->render()}
+	</center>
+</body>
+</html>

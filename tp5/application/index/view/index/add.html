@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<center>
+	<h1>2019八维马拉松</h1>
+		<form action="{:url('index/insert')}" method="post">
+			<table border="1">
+				<tr>
+					<td>证件号：</td>
+					<td><input type="text" name="zjh"></td>
+				</tr>
+				<tr>
+					<td>姓名：</td>
+					<td><input type="text" name="uname"></td>
+				</tr>
+				<tr>
+					<td>电话：</td>
+					<td><input type="text" name="tel"></td>
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+				    <td></td>
+					<td><input type="radio" name="cheng" value="全程">全程
+					    <input type="radio" name="cheng" value="半程">半程
+					</td>
+				</tr>
+				<tr>
+					<td>参赛时间：</td>
+					<td><input type="text" name="time"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="报名参赛"></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>
